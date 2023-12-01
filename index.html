@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PHero-Tube</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <img src="./images/Logo.png" alt="" class="logo">
+            <button class="sort-btn btn" onclick="displayDataByViews(1000)">Sort By View</button>
+            <button class="blog-btn btn"><a href="./blog.html">BLOG</a></button>
+        </div>
+    </header>
+    <main>
+        <div  class="btn-container">
+            <button class="btn" onclick="displayData(1000)">All</button>
+            <button class="btn" onclick="displayData(1001)">Music</button>
+            <button class="btn" onclick="displayData(1003)">Comedy</button>
+            <button class="btn" onclick="displayData(1005)">Drawing</button>
+        </div>
+
+        <div id="container" class="video-container">
+
+        </div>
+
+        <div class="blog-container">
+            <!-- Discuss the scope of var, let, and const
+            Tell us the use cases of null and undefined
+            What do you mean by REST API? -->
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- script file -->
+    <script src="index.js"></script>
+</body>
+</html>

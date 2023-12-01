@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(./images/bg.jpg);
+    }
+</style>
+<body>
+    <div class="accrdn">
+        <div class="accordion accordion-flush " id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h5>Discuss the scope of var, let, and const</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-black text-white"> <p>
+                    <h5>var: </h5>
+                    Scope: Function-scoped (not block-scoped).
+                    Hoisting: Variables declared with var are hoisted to the top of their function or global scope.
+                    Reassignment: Can be reassigned and redeclared within the same scope.
+                </p>
+                <p>
+                   <h5> let:</h5>
+    
+                    Scope: Block-scoped.
+                   Hoisting: Variables declared with let are hoisted to the top of their block scope but are not initialized until the actual declaration.
+                    Reassignment: Can be reassigned but cannot be redeclared within the same scope.
+                </p>
+                <p>
+                    <h5>const:</h5>
+    
+                    Scope: Block-scoped.
+                    Hoisting: Like let, const is hoisted to the top of its block scope but is not initialized until the actual declaration.
+                  Reassignment: Cannot be reassigned after declaration. However, for objects and arrays declared with const, their properties or elements can still be modified.
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <h5>Tell us the use cases of null and undefined</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-black text-white">
+                   <h5> undefined:</h5>
+                    Automatic Initialization: Variables that are declared but not assigned a value are automatically assigned the value undefined.
+                    Function Return: Functions without a return statement implicitly return undefined.
+                    Missing Function Arguments: Parameters that are not provided in a function call are undefined.
+                    Property Access: If you try to access an object property that doesn't exist, the result is undefined.
+                    
+                    <h5>null:</h5>
+                    Intentional Absence of Value: It is often used by developers to explicitly indicate that a variable or object property has no value or is intentionally empty.
+                    Object Initialization: It can be assigned to object properties or variables to indicate that they should not reference any object.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                   <h5> What do you mean by REST API?</h5>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body bg-black text-white">
+                    A REST API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building web services. It follows a stateless, client-server architecture with uniform interfaces, using standard HTTP methods for communication. Resources, identified by unique URIs, are manipulated through requests and responses, typically in JSON or XML format. RESTful APIs are widely used for building scalable and interoperable web applications.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+      <!-- bootstrap cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
